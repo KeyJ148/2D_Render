@@ -39,7 +39,8 @@ public class ControlAdapter implements KeyListener, MouseListener, MouseMotionLi
 
     @Override
     public void mouseWheelMoved(MouseWheelEvent mouseWheelEvent) {
-        listener.changeSize(DELTA_SIZE*mouseWheelEvent.getWheelRotation()*mouseWheelEvent.getScrollAmount(), mouseX, mouseY);
+        double delta = DELTA_SIZE*mouseWheelEvent.getWheelRotation()*mouseWheelEvent.getScrollAmount();
+        listener.changeSize(1+delta, mouseX, mouseY);
     }
 
     @Override

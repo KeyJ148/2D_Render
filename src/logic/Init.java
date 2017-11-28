@@ -86,6 +86,46 @@ public class Init {
         storage.lines.add(lM5);
         storage.lines.add(lM6);
 
+        Point pCDL1 = new Point(0.5, 14.75);
+        Point pCDL2 = new Point(0.5, 15.75);
+        Point pCDR1 = new Point(7.5, 14.75);
+        Point pCDR2 = new Point(7.5, 15.75);
+
+        Line lCDL = new Line(pCDL1, pCDL2);
+        Line lCDR = new Line(pCDR1, pCDR2);
+        Line lCDD = new Line(pCDL1, pCDR1);
+        Line lCDU = new Line(pCDL2, pCDR2);
+
+        storage.points.add(pCDL1);
+        storage.points.add(pCDL2);
+        storage.points.add(pCDR1);
+        storage.points.add(pCDR2);
+
+        storage.lines.add(lCDL);
+        storage.lines.add(lCDR);
+        storage.lines.add(lCDD);
+        storage.lines.add(lCDU);
+
+        Point pButtonL1 = new Point(6.5, 14.20);
+        Point pButtonL2 = new Point(6.5, 14.55);
+        Point pButtonR1 = new Point(7.5, 14.20);
+        Point pButtonR2 = new Point(7.5, 14.55);
+
+        Line lButtonL = new Line(pButtonL1, pButtonL2);
+        Line lButtonR = new Line(pButtonR1, pButtonR2);
+        Line lButtonD = new Line(pButtonL1, pButtonR1);
+        Line lButtonU = new Line(pButtonL2, pButtonR2);
+
+        storage.points.add(pButtonL1);
+        storage.points.add(pButtonL2);
+        storage.points.add(pButtonR1);
+        storage.points.add(pButtonR2);
+
+        storage.lines.add(lButtonL);
+        storage.lines.add(lButtonR);
+        storage.lines.add(lButtonD);
+        storage.lines.add(lButtonU);
+
         Point pUSB1L1 = new Point(2, 8.75);
         Point pUSB1L2 = new Point(3, 8.75);
         Point pUSB1R1 = new Point(2, 9.25);
